@@ -10,9 +10,9 @@ header{
     margin-top: 40px;
 }
 
-header h5{
+header h4{
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 600;
     text-align: center;
     margin-left: 30px;
     margin-bottom: 20px;
@@ -110,4 +110,11 @@ body{
     background: url(../img/backg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.modal{
+    background-color:rgba(236, 240, 241, 0.73) !important;
+    
+}
+.modal .modal-footer{
+    background-color: #b9bbba00 !important;
 }
