@@ -14,69 +14,82 @@
 </head>
 
 <body>
-    <header>
-        <h4>Beauty Shop</h4>
-        <ul>
-            <li><a>About</a></li>
-            <li><a>Contacto</a></li>
-            <li><a class="loginlinkButton">Login</a></li>
-            <li><a>Other</a></li>
-        </ul>
-    </header>
+
+    <section class="test">
+        <div class="header">
+            <h4>Beauty Shop</h4>
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Contacto</a></li>
+                <li><a class="loginlinkButton">Login</a></li>
+                <li><a>Other</a></li>
+            </ul>
+        </div>
 
 
-    <div class="cont_login">
-        <div class="cont_info_log_sign_up">
-            <div class="col_md_login">
-                <div class="cont_ba_opcitiy">
-                    <h2>ENTRAR</h2>
-                    <p>Si ya posees una cuenta, entra aqui.</p>
-                    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+        <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+                <div class="col_md_login">
+                    <div class="cont_ba_opcitiy">
+                        <h2>ENTRAR</h2>
+                        <p>Si ya posees una cuenta, entra aqui.</p>
+                        <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                    </div>
+                </div>
+                <div class="col_md_sign_up">
+                    <i class="material-icons closemodalicon">
+                        close
+                    </i>
+                    <div class="cont_ba_opcitiy">
+                        <h2>REGISTRO</h2>
+                        <p>No tienes una cuenta? Sacala totalmente gratis.</p>
+                        <button class="btn_sign_up" onclick="cambiar_sign_up()">Registarse</button>
+                    </div>
                 </div>
             </div>
-            <div class="col_md_sign_up">
-                <i class="material-icons closemodalicon" >
-                    close
-                </i>
-                <div class="cont_ba_opcitiy">
-                    <h2>REGISTRO</h2>
-                    <p>No tienes una cuenta? Sacala totalmente gratis.</p>
+            <div class="cont_back_info">
+                <div class="cont_img_back_grey">
+                    <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d"
+                        alt="" />
+                </div>
+            </div>
+            <div class="cont_forms">
+                <div class="cont_img_back_">
+                    <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d"
+                        alt="" />
+                </div>
+                <div class="cont_form_login">
+                    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button class="btn_login" onclick="cambiar_login()">Entrar</button>
+                </div>
+
+                <div class="cont_form_sign_up">
+                    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                    <h2>Registarse</h2>
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Usuario" />
+                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Confirmar Password" />
                     <button class="btn_sign_up" onclick="cambiar_sign_up()">Registarse</button>
                 </div>
             </div>
         </div>
-        <div class="cont_back_info">
-            <div class="cont_img_back_grey">
-                <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d"
-                    alt="" />
-            </div>
-        </div>
-        <div class="cont_forms">
-            <div class="cont_img_back_">
-                <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d"
-                    alt="" />
-            </div>
-            <div class="cont_form_login">
-                <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-                <h2>Login</h2>
-                <input type="text" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button class="btn_login" onclick="cambiar_login()">Entrar</button>
-            </div>
 
-            <div class="cont_form_sign_up">
-                <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-                <h2>Registarse</h2>
-                <input type="text" placeholder="Email" />
-                <input type="text" placeholder="Usuario" />
-                <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirmar Password" />
-                <button class="btn_sign_up" onclick="cambiar_sign_up()">Registarse</button>
-            </div>
-        </div>
+        <button class="pulse">Comienza aquí</button>
+
+    </section>
+
+    <div class="divider">
+        En Construccion papu
     </div>
 
-    <button class="pulse modal-trigger" href="#modal1">Comienza aquí</button>
+    <section class="choose">
+
+    </section>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>

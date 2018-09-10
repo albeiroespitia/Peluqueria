@@ -63,3 +63,8 @@ $('.closemodalicon').click(function(){
   });
   
 })
+
+
+$('.pulse').click(function(){
+  $('body,html').animate({ scrollTop: $('body').height() }, 2000);
+})
