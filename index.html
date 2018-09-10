@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
@@ -18,51 +19,68 @@
         <ul>
             <li><a>About</a></li>
             <li><a>Contacto</a></li>
-            <li><a>Login</a></li>
+            <li><a class="loginlinkButton">Login</a></li>
             <li><a>Other</a></li>
         </ul>
     </header>
 
-    <button class="pulse modal-trigger" href="#modal1">Comienza aquí</button>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <center><h4>Servicios</h4></center>
-            <div class="col s2"></div>
-            <div class="input-field col s10 m4">
-                    <select class="icons">
-                      <option value="" disabled selected>Seleccionar...</option>
-                      <option value="" data-icon="https://image.flaticon.com/icons/svg/40/40861.svg" class="left">Cabello</option>
-                      <option value="" data-icon="https://image.flaticon.com/icons/svg/196/196638.svg" class="left">Manicure</option>
-                      <option value="" data-icon="https://image.flaticon.com/icons/svg/196/196639.svg" class="left">Pedicure</option>
-                    </select>
-                    <label class="green-teal darken-4 ">Tipo de Servicio</label>
+    <div class="cont_login">
+        <div class="cont_info_log_sign_up">
+            <div class="col_md_login">
+                <div class="cont_ba_opcitiy">
+                    <h2>ENTRAR</h2>
+                    <p>Si ya posees una cuenta, entra aqui.</p>
+                    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                </div>
             </div>
-            <div class="col s2"></div>
-            <br>
-            <br>
-            <br>
-            <br>
+            <div class="col_md_sign_up">
+                <i class="material-icons closemodalicon" >
+                    close
+                </i>
+                <div class="cont_ba_opcitiy">
+                    <h2>REGISTRO</h2>
+                    <p>No tienes una cuenta? Sacala totalmente gratis.</p>
+                    <button class="btn_sign_up" onclick="cambiar_sign_up()">Registarse</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat green white-text">Enviar</a>
+        <div class="cont_back_info">
+            <div class="cont_img_back_grey">
+                <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d"
+                    alt="" />
+            </div>
         </div>
-        
+        <div class="cont_forms">
+            <div class="cont_img_back_">
+                <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d"
+                    alt="" />
+            </div>
+            <div class="cont_form_login">
+                <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                <h2>Login</h2>
+                <input type="text" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button class="btn_login" onclick="cambiar_login()">Entrar</button>
+            </div>
+
+            <div class="cont_form_sign_up">
+                <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                <h2>Registarse</h2>
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Usuario" />
+                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Confirmar Password" />
+                <button class="btn_sign_up" onclick="cambiar_sign_up()">Registarse</button>
+            </div>
+        </div>
     </div>
+
+    <button class="pulse modal-trigger" href="#modal1">Comienza aquí</button>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('select').formSelect();
-        });
-
-        $(document).ready(function () {
-            $('.modal').modal();
-        });
-    </script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
