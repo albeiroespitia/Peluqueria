@@ -81,12 +81,10 @@
     }
 }
 
+
 .pulse {
     --color: #8fc866;
     --hover: #66c887;
-}
-
-button {
     display: block;
     background: none;
     border: 2px solid;
@@ -520,15 +518,49 @@ button:hover, button:focus {
 	to {background-position: 500px 0;}
 }
 
-
-
-
 .choose{
     width: 100%;
-    height: 600px;
+    height: 90vh;
     background-image: url(../img/champu.jpg);
     background-size: cover;
+    position: relative;
 }
 
+.selectButton1,
+.selectButton2{
+    --color: #1565c0;
+    --hover: #0d47a1;
+    display: block;
+    background: none;
+    float: left;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: auto;
+    padding: 1em 2em;
+    color: var(--color);
+    transition: 0.25s;
+    position: absolute;
+    top: 40vh;
+    font-weight: 300;
+}
 
+.fill {
+  box-shadow: inset 0 0 0 2em var(--color);
+  color: #fff;
+  border-color: var(--color);
+}
 
+.fill:hover {
+    box-shadow: inset 0 0 0 2em var(--hover);
+    color: #fff;
+    border-color: var(--hover);
+}
+
+.selectButton1{
+    left: 30vw;
+}
+
+.selectButton2{
+    left: 60vw;
+}

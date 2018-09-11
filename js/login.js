@@ -66,5 +66,14 @@ $('.closemodalicon').click(function(){
 
 
 $('.pulse').click(function(){
-  $('body,html').animate({ scrollTop: $('body').height() }, 2000);
+  $('html, body').animate({scrollTop:$('.divider').position().top}, 1500);
+})
+
+$('.btn_login').click(function(){
+  var userEmail = $('#emailLogin').val();
+  var passwordEmail = $('#passwordLogin').val();
+
+  if((userEmail == "admin") && (passwordEmail == "admin")){
+    location.href ="./Admin/index.html";
+  }
 })
