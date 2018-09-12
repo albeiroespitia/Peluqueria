@@ -53,6 +53,11 @@ $('.loginlinkButton').click(function (e) {
   }, 1000);
 })
 
+$('.ubicationButton').click(function(e){
+  $('html, body').animate({scrollTop:$('#secondDivider').position().top}, 1500);  
+})
+  
+
 
 $('.closemodalicon').click(function(){
   $(".cont_login").animate({
@@ -66,7 +71,7 @@ $('.closemodalicon').click(function(){
 
 
 $('.pulse').click(function(){
-  $('html, body').animate({scrollTop:$('.divider').position().top}, 1500);
+  $('html, body').animate({scrollTop:$('#firstDivider').position().top}, 1500);
 })
 
 $('.btn_login').click(function(){
@@ -98,6 +103,8 @@ $('.btn_login').click(function(){
     });
   
   }).call(this);
+  
+
   
 })
 
