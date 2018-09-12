@@ -1,5 +1,3 @@
-
-
 * {
     padding: 0;
     margin: 0;
@@ -97,7 +95,8 @@
     transition: 0.25s;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     cursor: pointer;
     border-color: var(--hover);
     color: #fff;
@@ -113,7 +112,7 @@ button:hover, button:focus {
 }
 
 
-.cont_login *{
+.cont_login * {
     margin: 0px auto;
     padding: 0px;
     text-align: center;
@@ -126,7 +125,7 @@ button:hover, button:focus {
     position: relative;
     width: 640px;
     left: 50%;
-    box-shadow: 0 0 0 999em rgba(0.5,0.5,0.5,0.5);
+    box-shadow: 0 0 0 999em rgba(0.5, 0.5, 0.5, 0.5);
     margin-left: -320px;
     opacity: 0;
 }
@@ -188,7 +187,7 @@ button:hover, button:focus {
     left: -116px;
 }
 
-.cont_img_back_grey > img {
+.cont_img_back_grey>img {
     width: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -207,7 +206,7 @@ button:hover, button:focus {
     left: -116px;
 }
 
-.cont_img_back_ > img {
+.cont_img_back_>img {
     width: 100%;
     opacity: 0.3;
     animation-name: animar_fondo;
@@ -217,7 +216,7 @@ button:hover, button:focus {
     animation-direction: alternate;
 }
 
-.cont_forms_active_login > .cont_img_back_ {
+.cont_forms_active_login>.cont_img_back_ {
     top: 0px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -226,7 +225,7 @@ button:hover, button:focus {
     transition: all 0.5s;
 }
 
-.cont_forms_active_sign_up > .cont_img_back_ {
+.cont_forms_active_sign_up>.cont_img_back_ {
     top: 0px;
     left: -435px;
     -webkit-transition: all 0.5s;
@@ -250,13 +249,13 @@ button:hover, button:focus {
     width: 50%;
 }
 
-.col_md_login > h2 {
+.col_md_login>h2 {
     font-weight: 400;
     margin-top: 70px;
     color: #757575;
 }
 
-.col_md_login > p {
+.col_md_login>p {
     font-weight: 400;
     margin-top: 15px;
     width: 80%;
@@ -281,12 +280,12 @@ button:hover, button:focus {
     width: 50%;
 }
 
-.cont_ba_opcitiy > h2 {
+.cont_ba_opcitiy>h2 {
     font-weight: 400;
     color: #fff;
 }
 
-.cont_ba_opcitiy > p {
+.cont_ba_opcitiy>p {
     font-weight: 400;
     margin-top: 15px;
     color: #fff;
@@ -418,7 +417,7 @@ button:hover, button:focus {
     transition: all 0.5s;
 }
 
-.cont_form_sign_up > input {
+.cont_form_sign_up>input {
     text-align: left;
     padding: 15px 5px;
     margin-left: 10px;
@@ -428,13 +427,13 @@ button:hover, button:focus {
     color: #757575;
 }
 
-.cont_form_sign_up > h2 {
+.cont_form_sign_up>h2 {
     margin-top: 50px;
     font-weight: 400;
     color: #757575;
 }
 
-.cont_form_login > input {
+.cont_form_login>input {
     padding: 15px 5px;
     margin-left: 10px;
     margin-top: 20px;
@@ -444,13 +443,14 @@ button:hover, button:focus {
     color: #757575;
 }
 
-.cont_form_login > h2 {
+.cont_form_login>h2 {
     margin-top: 110px;
     font-weight: 400;
     color: #757575;
 }
 
-.cont_form_login > a, .cont_form_sign_up > a {
+.cont_form_login>a,
+.cont_form_sign_up>a {
     color: #757575;
     position: relative;
     float: left;
@@ -458,67 +458,92 @@ button:hover, button:focus {
     margin-left: 30px;
 }
 
-.closemodalicon{
+.closemodalicon {
     float: right;
     margin-top: 15px;
     margin-right: 20px;
     cursor: pointer;
 }
 
-.divider{
+.divider {
     width: 100%;
-    height: 100px;
+    height: 15vh;
     text-align: center;
     font-size: 20px;
 }
 
-.divider{
-	margin:0;
-	padding:0;
-	font-family:"arial",heletica,sans-serif;
-	font-size:12px;
+.divider {
+    margin: 0;
+    padding: 0;
+    font-family: "arial", heletica, sans-serif;
+    font-size: 12px;
     background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
- 
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+
 }
 
-.textdivider{
+.textdivider {
     color: white;
     font-size: 20px;
     padding-top: 30px;
     font-weight: 200;
 }
- 
+
 @-webkit-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@-moz-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@-ms-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@-o-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
 }
 
-.choose{
+@-moz-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-ms-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-o-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+.choose {
     width: 100%;
     height: 90vh;
     background-image: url(../img/champu.jpg);
@@ -530,9 +555,9 @@ button:hover, button:focus {
 
 /* 7///////////////// */
 
-.card1{
+.card1 {
     position: absolute;
-    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
     padding: 2px 16px;
     background: white;
     width: 40vw;
@@ -545,11 +570,11 @@ button:hover, button:focus {
 }
 
 
-.card2{
+.card2 {
     border-radius: 5px;
     opacity: 0.5;
     position: absolute;
-    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
     padding: 2px 16px;
     background: white;
     width: 40vw;
@@ -559,31 +584,31 @@ button:hover, button:focus {
     right: 5%;
 }
 
-.menu article{
+.menu article {
     width: 100%;
     float: left;
     padding: 20px;
 }
 
-.menu .categoria{
+.menu .categoria {
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
     font-size: 22px;
 }
 
-.menu .platillo{
+.menu .platillo {
     margin-bottom: 20px;
     padding-bottom: 0px;
     border-bottom: 4px solid black;
     overflow: hidden;
 }
 
-.sectionplatillo1{
-    padding-bottom: 15px !important;  
+.sectionplatillo1 {
+    padding-bottom: 15px !important;
 }
 
-.menu .nombre{
+.menu .nombre {
     font-size: 20px;
     margin-bottom: 10px;
     float: left;
@@ -591,33 +616,34 @@ button:hover, button:focus {
     left: 35px;
 }
 
-.menu .precio{
+.menu .precio {
     position: relative;
-    float:right;
+    float: right;
     font-size: 20px;
     margin-bottom: 5px;
     margin-left: -40px;
 }
 
-.menu .descripcion{
+.menu .descripcion {
     position: relative;
     font-size: 15px;
     color: #676767;
     clear: both;
 }
 
-.sectionPlatillo{
+.sectionPlatillo {
     border-bottom: 2px dotted;
     overflow: auto;
 }
 
-.pedicure{
+.pedicure {
     margin-top: 80px;
 }
 
-.subtitle{
+.subtitle {
     color: white;
-    width: 100%;;
+    width: 100%;
+    ;
     display: block;
     font-size: 40px;
     position: absolute;
@@ -635,22 +661,26 @@ button:hover, button:focus {
     clear: both;
     margin-bottom: 30px;
     text-align: center;
-  }
-  .row--intro {
+}
+
+.row--intro {
     padding-top: 20px;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
     color: #fff;
     opacity: 0.4;
-  }
-  .row--intro span {
+}
+
+.row--intro span {
     font-size: 11px;
-  }
-  .skew-title {
+}
+
+.skew-title {
     font-size: 25px;
-  }
-  .skew-title span {
+}
+
+.skew-title span {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -664,14 +694,15 @@ button:hover, button:focus {
     font-size: 35.714285714285715px;
     line-height: 50px;
     -webkit-transform: skewY(-15deg);
-            transform: skewY(-15deg);
+    transform: skewY(-15deg);
     -webkit-transform-origin: 0 100%;
-            transform-origin: 0 100%;
+    transform-origin: 0 100%;
     transition: all 0.2s;
     cursor: default;
-  }
-  .skew-title span:after,
-  .skew-title span:before {
+}
+
+.skew-title span:after,
+.skew-title span:before {
     display: block;
     top: 0;
     left: 0;
@@ -682,50 +713,70 @@ button:hover, button:focus {
     content: ' ';
     z-index: -1;
     transition: all 0.2s;
-  }
-  .skew-title span:before {
-    background: rgba(0,0,0,0.1);
+}
+
+.skew-title span:before {
+    background: rgba(0, 0, 0, 0.1);
     -webkit-transform: skewY(15deg);
-            transform: skewY(15deg);
+    transform: skewY(15deg);
     -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-  }
-  .skew-title span:nth-child(even) {
+    transform-origin: 0 0;
+}
+
+.skew-title span:nth-child(even) {
     background-color: #144c6e;
     -webkit-transform: skewY(15deg);
-            transform: skewY(15deg);
+    transform: skewY(15deg);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
     color: #d9d9d9;
-  }
-  .skew-title span:nth-child(even):after {
+}
+
+.skew-title span:nth-child(even):after {
     background-color: #144c6e;
-  }
-  .skew-title span:nth-child(even):before {
+}
+
+.skew-title span:nth-child(even):before {
     -webkit-transform-origin: 100% 0;
-            transform-origin: 100% 0;
+    transform-origin: 100% 0;
     -webkit-transform: skewY(-15deg);
-            transform: skewY(-15deg);
-  }
-  .skew-title span.flat {
+    transform: skewY(-15deg);
+}
+
+.skew-title span.flat {
     -webkit-transform: skewY(0);
-            transform: skewY(0);
+    transform: skewY(0);
     color: #fff;
-  }
-  .skew-title span.flat:before {
+}
+
+.skew-title span.flat:before {
     -webkit-transform: skewY(0);
-            transform: skewY(0);
-  }
-  .skew-title span.flat:nth-child(even):after {
+    transform: skewY(0);
+}
+
+.skew-title span.flat:nth-child(even):after {
     background-color: #185a81;
-  }
-  .skew-title span.alt:after {
+}
+
+.skew-title span.alt:after {
     background-color: #b94a2c;
-  }
-  .skew-title span.alt:nth-child(even):after {
+}
+
+.skew-title span.alt:nth-child(even):after {
     background-color: #9d3f25;
-  }
-  .skew-title span.alt.flat:nth-child(even):after {
+}
+
+.skew-title span.alt.flat:nth-child(even):after {
     background-color: #b94a2c;
-  }
-  
+}
+
+
+.mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 85vh;
+}
