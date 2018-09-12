@@ -1,108 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Sistema de Gestion - Beauty Shop</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Gestion - Beauty Shop</title>
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <ul id="slide-out" class="side-nav fixed z-depth-4">
-      <li>
-        <div class="userView">
-          <div class="background">
-            <img src="https://www.mediacomponents.com/wp-content/uploads/2013/10/media-components-webdesign-bg.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="assets/img/avatar04.png"></a>
-          <a href="#!name"><span class="white-text name">Bienvenid@,</span></a>
-          <a href="#!email"><span class="white-text email">user!</span></a>
+<body>
+
+  <ul id="slide-out" class="side-nav fixed z-depth-4">
+    <li>
+      <div class="userView">
+        <div class="background">
+          <img src="https://www.mediacomponents.com/wp-content/uploads/2013/10/media-components-webdesign-bg.jpg">
         </div>
-      </li>
+        <a href="#!user"><img class="circle" src="assets/img/avatar04.png"></a>
+        <a href="#!name"><span class="white-text name">Bienvenid@,</span></a>
+        <a href="#!email"><span class="white-text email">user!</span></a>
+      </div>
+    </li>
 
-      <li>
-        <form class="sidebar-form">
-          <div class="input-group">
-            <input id="accounts" type="text" name="username" class="form-control" placeholder="Buscar..." autocomplete="off" />
+    <li>
+      <form class="sidebar-form">
+        <div class="input-group">
+          <input id="accounts" type="text" name="username" class="form-control" placeholder="Buscar..." autocomplete="off" />
+        </div>
+      </form>
+    </li>
+
+    <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>Inicio</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+
+    <li><a class="subheader">Administracion</a></li>
+
+    <!-- CLIENTES -->
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Clientes<i class="material-icons pink-item">person_add</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="addClient.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
+              <li><a href="modifyClient.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
+              <li><a href="deleteClient.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
+            </ul>
           </div>
-        </form>
-      </li>
+        </li>
+      </ul>
+    </li>
+    <!-- FACTURAS -->
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Facturas<i class="material-icons pink-item">insert_chart</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="addFactura.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
+              <li><a href="modifyFactura.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
+              <li><a href="deleteFactura.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <!-- EMPLEADOS -->
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Empleados<i class="material-icons pink-item">people</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="addEmpleado.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
+              <li><a href="modifyEmpleado.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
+              <li><a href="deleteEmpleado.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <!-- SERVICIOS -->
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Servicios<i class="material-icons pink-item">room_service</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="addServicio.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
+              <li><a href="#.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
+              <li><a href="#.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
 
-      <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>Inicio</a></li>
-      <li><div class="divider"></div></li>
-
-      <li><a class="subheader">Administracion</a></li>
-     
-      <!-- CLIENTES -->
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Clientes<i class="material-icons pink-item">person_add</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="addClient.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
-                <li><a href="modifyClient.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
-                <li><a href="deleteClient.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <!-- FACTURAS -->
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Facturas<i class="material-icons pink-item">insert_chart</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="addFactura.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
-                <li><a href="modifyFactura.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
-                <li><a href="deleteFactura.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <!-- EMPLEADOS -->
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Empleados<i class="material-icons pink-item">people</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="addEmpleado.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
-                <li><a href="modifyEmpleado.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
-                <li><a href="deleteEmpleado.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <!-- SERVICIOS -->
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Servicios<i class="material-icons pink-item">room_service</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="addServicio.html"><i class="material-icons pink-item">add</i>Añadir nuevo</a></li>
-                <li><a href="#.html"><i class="material-icons pink-item">remove_red_eye</i>Modificar</a></li>
-                <li><a href="#.html"><i class="material-icons pink-item">close</i>Eliminar</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-
-    </ul>
-    <main>
+  </ul>
+  <main>
     <section class="content">
-      <div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i class="material-icons">menu</i></a><h1 class="page-announce-text valign">Sistema de Gestión | Beauty Shop </h1></div>
+      <div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i
+            class="material-icons">menu</i></a>
+        <h1 class="page-announce-text valign">Sistema de Gestión | Beauty Shop </h1>
+      </div>
       <!-- Stat Boxes -->
       <div class="row">
         <div class="col l3 s6">
@@ -117,49 +123,49 @@
             </div>
             <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-          </div><!-- ./col -->
-          <div class="col l3 s6">
-            <!-- small box -->
-            <div class="small-box bg-green">
-              <div class="inner">
-                <h3>69</h3>
-                <p>Facturas</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
+        </div><!-- ./col -->
+        <div class="col l3 s6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>69</h3>
+              <p>Facturas</p>
             </div>
-            </div><!-- ./col -->
-            <div class="col l3 s6">
-              <!-- small box -->
-              <div class="small-box bg-yellow">
-                <div class="inner">
-                  <h3>16</h3>
-                  <p>Empleados</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-ios-people"></i>
-                </div>
-                <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-              </div><!-- ./col -->
-              <div class="col l3 s6">
-                <!-- small box -->
-                <div class="small-box bg-red">
-                  <div class="inner">
-                    <h3>3</h3>
-                    <p>Servicios</p>
-                  </div>
-                  <div class="icon">
-                    <i class="ion ion-ios-heart"></i>
-                  </div>
-                  <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div><!-- ./col -->
+        <div class="col l3 s6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>16</h3>
+              <p>Empleados</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-people"></i>
+            </div>
+            <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div><!-- ./col -->
+        <div class="col l3 s6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>3</h3>
+              <p>Servicios</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-heart"></i>
+            </div>
+            <a href="#" class="small-box-footer" class="animsition-link">Abrir <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
 
-              <div class="container">
-                <!-- Mouse Herramienta 
+        <div class="container">
+          <!-- Mouse Herramienta 
                 <div class="quick-links center-align">
                   <h3>Quick Links</h3>
                   <div class="row">
@@ -171,90 +177,94 @@
                   </div>
                 </div>
                 -->
-                <hr>
-                <h3 class="center-align">Actividad Reciente</h3>
-                <div class="custom-responsive">
-                  <table class="striped hover centered">
-                    <thead><tr>
-                      <th>Nombre</th>
-                      <th>Nivel de Acceso</th>
-                      <th>Ultima vez</th>
-                      <th>¿Activo?</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>MichaelGScott</td>
-                      <td>Administrator</td>
-                      <td>2017-03-31</td>
-                      <td><i class="text-green material-icons">check</i></td>
-                    </tr>
-                    <tr>
-                      <td>JimHalpert</td>
-                      <td>Sales</td>
-                      <td>2017-03-31</td>
-                      <td><i class="text-green material-icons">check</i></td>
-                    </tr>
-                    <tr>
-                      <td>KevinMalone</td>
-                      <td>Accounting</td>
-                      <td>2017-03-31</td>
-                      <td><i class="text-red material-icons">close</i></td>
-                    </tr>
-                    <tr>
-                      <td>PamBeesly</td>
-                      <td>Reception</td>
-                      <td>2017-03-31</td>
-                      <td><i class="text-green material-icons">check</i></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <hr>
+          <h3 class="center-align">Reportes</h3>
+          <div class="row">
+            <div class="input-field col s4 offset-s2">
+              <select class="icons">
+                <option value="0" disabled selected>Seleccionar</option>
+                <optgroup label="Por servicios">
+                  <option value="SerMensual" data-icon="http://www.peresourcesbank.co.uk/wp-content/uploads/2016/02/testimonial_icon.png"
+                    class="left"> Mensual </option>
+                    <option value="SerSemanal" data-icon="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-student-3e3e52aa56aeb627-512x512.png"
+                    class="left"> Semanal </option>
+                  <option value="SerDiario" data-icon="http://www.iconarchive.com/download/i80376/jozef89/services-flat/consult.ico"
+                    class="left"> Diario </option>
+                </optgroup>
+                <optgroup label="Por empleados">
+                  <option value="EmpMensual" data-icon="http://www.domalberto.edu.br/wp-content/uploads/2017/02/joao.png"
+                    class="left"> Mensual</option>
+                    <option value="SerSemanal" data-icon="https://png.pngtree.com/svg/20161217/avatar__181424.png"
+                    class="left"> Semanal </option>
+                  <option value="EmpDiario" data-icon="https://www.rsinfra.in/img/employe.png" class="left">Diario</option>
+                </optgroup>
+              </select>
+              <label>Tipo de Reporte</label>
             </div>
-          </div>
-        </section>
-        </main>
-        <footer class="page-footer">
-          <div class="footer-copyright">
-            <div class="container">
-              © 2017 Farooq Designs. All rights reserved.
-            </div>
-          </div>
-        </footer>
+            <a class="waves-effect waves-light btn-large red col s3"><i class="material-icons right">send</i>Consultar</a>
 
-        <!-- So this is basically a hack, until I come up with a better solution. autocomplete is overridden
+          </div>
+          <div class="tipoReporte" style="width:100%;">
+            <canvas id="SerSemanal"></canvas>
+          </div>
+
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Farooq Designs. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- So this is basically a hack, until I come up with a better solution. autocomplete is overridden
         in the materialize js file & I don't want that.
         -->
-        <!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-        <script>
-        // Hide sideNav
-        $('.button-collapse').sideNav({
-        menuWidth: 300, // Default is 300
-        edge: 'left', // Choose the horizontal origin
-        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-          draggable: true // Choose whether you can drag to open on touch screens
-          });
-          $(document).ready(function(){
-          $('.tooltipped').tooltip({delay: 50});
-          });
-          $('select').material_select();
-          $('.collapsible').collapsible();
-          </script>
-          <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50" data-tooltip="Quick Links">
-            <a class="btn-floating btn-large red">
-              <i class="large material-icons">mode_edit</i>
-            </a>
-            <ul>
-              <li><a class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="Handbook" href="#"><i class="material-icons">insert_chart</i></a></li>
-              <li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Staff Applications" href="#"><i class="material-icons">format_quote</i></a></li>
-              <li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Name Guidelines" href="#"><i class="material-icons">publish</i></a></li>"
-              <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#"><i class="material-icons">attach_file</i></a></li>
-              <li><a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#"><i class="material-icons">person</i></a></li>
-            </ul>
-          </div>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      </body>
-    </html>
+  <!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script>
+    // Hide sideNav
+    $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    });
+    $(document).ready(function () {
+      $('.tooltipped').tooltip({
+        delay: 50
+      });
+    });
+    $('select').material_select();
+    $('.collapsible').collapsible();
+  </script>
+  <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50"
+    data-tooltip="Quick Links">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="Handbook" href="#"><i
+            class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Staff Applications"
+          href="#"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Name Guidelines"
+          href="#"><i class="material-icons">publish</i></a></li>"
+      <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#"><i
+            class="material-icons">attach_file</i></a></li>
+      <li><a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#"><i
+            class="material-icons">person</i></a></li>
+    </ul>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
+  <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+  <script src="assets/js/graphs.js"></script>
+
+</body>
+
+</html>
