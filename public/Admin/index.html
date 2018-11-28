@@ -165,7 +165,7 @@
         </div>
 
         <div class="container">
-          <!-- Mouse Herramienta 
+          <!-- Mouse Herramienta
                 <div class="quick-links center-align">
                   <h3>Quick Links</h3>
                   <div class="row">
@@ -181,23 +181,15 @@
           <h3 class="center-align">Reportes</h3>
           <div class="row">
             <div class="input-field col s4 offset-s2">
-              <select class="icons">
-                <option value="0" disabled selected>Seleccionar</option>
-                <optgroup label="Por servicios">
-                  <option value="SerMensual" data-icon="http://www.peresourcesbank.co.uk/wp-content/uploads/2016/02/testimonial_icon.png"
-                    class="left"> Mensual </option>
-                    <option value="SerSemanal" data-icon="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-student-3e3e52aa56aeb627-512x512.png"
-                    class="left"> Semanal </option>
-                  <option value="SerDiario" data-icon="http://www.iconarchive.com/download/i80376/jozef89/services-flat/consult.ico"
-                    class="left"> Diario </option>
-                </optgroup>
-                <optgroup label="Por empleados">
+              <select class="icons graphsSelect">
+                <option value="EmpMensual" disabled selected>Seleccionar</option>
                   <option value="EmpMensual" data-icon="http://www.domalberto.edu.br/wp-content/uploads/2017/02/joao.png"
-                    class="left"> Mensual</option>
-                    <option value="SerSemanal" data-icon="https://png.pngtree.com/svg/20161217/avatar__181424.png"
-                    class="left"> Semanal </option>
-                  <option value="EmpDiario" data-icon="https://www.rsinfra.in/img/employe.png" class="left">Diario</option>
-                </optgroup>
+                    class="left"> Empleados </option>
+                    <option value="SerMensual" data-icon="https://png.pngtree.com/svg/20161217/avatar__181424.png"
+                    class="left"> Servicios </option>
+                  <option value="IngMensual" data-icon="https://www.rsinfra.in/img/employe.png" class="left"> Ingresos</option>
+				  <option value="EgrMensual" data-icon="https://www.rsinfra.in/img/employe.png" class="left"> Egresos </option>
+				  <option value="EgrIngMensual" data-icon="https://www.rsinfra.in/img/employe.png" class="left"> Egresos vs Ingresos </option>
               </select>
               <label>Tipo de Reporte</label>
             </div>
@@ -208,19 +200,19 @@
           <div class="tipoReporte" style="width:100%;">
             <canvas id="SerMensual"></canvas>
           </div>
-          <hr>
           <div class="tipoReporte" style="width:100%;">
-            <canvas id="SerSemanal"></canvas>
+            <canvas id="ingMensual"></canvas>
           </div>
-          <hr>
           <div class="tipoReporte" style="width:100%;">
             <canvas id="empMensual"></canvas>
           </div>
-          <hr>
-          
-          <div class="tipoReporte" style="width:100%;">
-            <canvas id="empDiario"></canvas>
+		  <div class="tipoReporte" style="width:100%;">
+            <canvas id="egrMensual"></canvas>
           </div>
+		  <div class="tipoReporte" style="width:100%;">
+            <canvas id="egringMensual"></canvas>
+          </div>
+
     </section>
   </main>
   <footer class="page-footer">
@@ -252,7 +244,7 @@
       });
       $('select').formSelect();
     });
-    
+
     $('.collapsible').collapsible();
   </script>
   <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50"

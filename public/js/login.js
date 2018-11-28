@@ -54,9 +54,9 @@ $('.loginlinkButton').click(function (e) {
 })
 
 $('.ubicationButton').click(function(e){
-  $('html, body').animate({scrollTop:$('#secondDivider').position().top}, 1500);  
+  $('html, body').animate({scrollTop:$('#secondDivider').position().top}, 1500);
 })
-  
+
 
 
 $('.closemodalicon').click(function(){
@@ -66,7 +66,7 @@ $('.closemodalicon').click(function(){
   }, 1000,function(){
     $('.cont_login').css('display', 'none');
   });
-  
+
 })
 
 
@@ -79,7 +79,7 @@ $('.btn_login').click(function(){
   var passwordEmail = $('#passwordLogin').val();
 
   if((userEmail == "admin") && (passwordEmail == "admin")){
-    location.href ="./Admin/index.html";
+    location.href ="../Admin/";
   }
 
 
@@ -101,8 +101,67 @@ $('.btn_login').click(function(){
     }), function() {
       return $('.flat').removeClass('flat');
     });
-  
+
   }).call(this);
 })
 
+$(document).ready(async function(){
+	const response = await fetch('/api/cabello',{
+		method: 'GET',
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	});
+	const dataCabello = await response.json();
+	console.log(dataCabello);
 
+	const response2 = await fetch('/api/manicure',{
+		method: 'GET',
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	});
+	const dataManicure = await response2.json();
+	console.log(dataManicure);
+
+	const response3 = await fetch('/api/pedicure',{
+		method: 'GET',
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	});
+	const dataPedicure = await response3.json();
+	console.log(dataPedicure);
+
+
+	let htmlCabello = '';
+	dataCabello.cabello.map(function(element){
+		htmlCabello+= `<div class="sectionPlatillo ">
+			<p class="nombre">${element.description}</p>
+			<p class="precio">$${element.price}</p>
+		</div>`
+	})
+
+	$('.sectionplatillo1').html(htmlCabello);
+
+	let htmlManicure = '';
+	dataManicure.manicure.map(function(element){
+		htmlManicure+= `<div class="sectionPlatillo ">
+			<p class="nombre">${element.description}</p>
+			<p class="precio">$${element.price}</p>
+		</div>`
+	})
+
+	$('.manicureP').html(htmlManicure);
+
+	let htmlPedicure = '';
+	dataPedicure.pedicure.map(function(element){
+		htmlPedicure+= `<div class="sectionPlatillo ">
+			<p class="nombre">${element.description}</p>
+			<p class="precio">$${element.price}</p>
+		</div>`
+	})
+
+	$('.pedicureP').html(htmlPedicure);
+
+})

@@ -12,7 +12,18 @@ function saveProduct (req,res){
     })
 }
 
+function getProduct (req,res){
+    Manicure.find({},(err,manicure)=>{
+        if (err) return res.status(500).send({message:`Error realizar la peticion ${err}`})
+        if (!manicure) return res.status(404).send({message: `Error productos no existen`});
+
+        res.send(200, {manicure})
+    })
+}
+
+
 
 module.exports = {
-	saveProduct
+	saveProduct,
+	getProduct
 }

@@ -12,7 +12,18 @@ function saveProduct (req,res){
     })
 }
 
+function getProduct (req,res){
+    Cabello.find({},(err,cabello)=>{
+        if (err) return res.status(500).send({message:`Error realizar la peticion ${err}`})
+        if (!cabello) return res.status(404).send({message: `Error productos no existen`});
+
+        res.send(200, {cabello})
+    })
+}
+
+
 
 module.exports = {
-	saveProduct
+	saveProduct,
+	getProduct
 }
