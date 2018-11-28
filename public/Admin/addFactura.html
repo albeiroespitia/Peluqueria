@@ -37,7 +37,7 @@
     <li><div class="divider"></div></li>
 
     <li><a class="subheader">Administracion</a></li>
-   
+
     <!-- CLIENTES -->
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
@@ -108,60 +108,44 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="input-field col s6">
-            <input placeholder="1084348843" id="first_name" type="text" class="validate">
-            <label for="first_name">Numero de Factura</label>
-          </div>
+			<div class="input-field col s6">
+  			<select class="selectEmpleado">
+  			  <option value="" disabled selected>Seleccionar...</option>
+  			  <option value="Esteban Orozco">Esteban Orozco</option>
+  			  <option value="Sandra Reales">Sandra Reales</option>
+			  <option value="Juan Mata">Juan Mata</option>
+  			</select>
+  			<label>Empleado</label>
+  		  </div>
 
         </div>
         <div class="row">
           <form class="col s12">
             <div class="row">
-              <div class="input-field col s6">
-                <input placeholder="Edgar Will" id="first_name" type="text" class="validate">
-                <label for="first_name">Nombres</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" placeholder="Casas Rojas" type="text" class="validate">
-                <label for="last_name">Apellidos</label>
-              </div>
+				<div class="input-field col s6">
+					<select class="selectServicio">
+					  <option value="" disabled selected>Seleccionar...</option>
+					  <option value="Manicure">Manicure</option>
+					  <option value="Pedicure">Pedicure</option>
+				  <option value="Cabello">Cabello</option>
+					</select>
+					<label>Servicio</label>
+				  </div>
+				  <div class="input-field col s6">
+					  <input id="mes" placeholder="Ingrese el mes" type="text" class="validate">
+	                  <label for="mes">Mes</label>
+					</div>
             </div>
 
             <div class="row">
-              <div class="input-field col s6">
-                <input id="email" placeholder="edgarcasasrojas@yahoo.es" type="email" class="validate">
-                <label for="email">Producto</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="email" placeholder="304 323 12 34" type="email" class="validate">
-                <label for="email">Celular</label>
-              </div>
-            </div>
-            <div class="row">
-                
-                <div class="input-field col s6">                  
-                    <input id="date"  type="date" class="validate">
-                </div>
-              
-              <div class="input-field col s6">
-                  <input id="last_name" placeholder="" type="text" class="validate">
-                  <label for="last_name">Valor</label>
-                  <p style="margin-top:0px;font-size:13px;color:gray;">Estos ingresos seran repartidos 40% al dueño, <br> 50% al empleado y 10% en insumos</p>
-                
-              </div>
-            </div>
-
-            <div class="row">
-              
-              <div class="input-field col s12">
-                  <input id="last_name" placeholder="" type="text" class="validate">
-                  <label for="last_name">Descripción</label>
-                
-              </div>
+				<div class="input-field col s6">
+  				  <input id="precio" placeholder="Ingrese el precio" type="text" class="validate">
+  				  <label for="precio">Precio</label>
+  				</div>
             </div>
             <div class="row">
                 <div class="col s4"></div>
-                <a class="col s4 waves-effect waves-light btn-large green "><i class="material-icons right">add</i>Añadir</a>
+                <a class="col s4 waves-effect waves-light btn-large green formButon"><i class="material-icons right">add</i>Añadir</a>
               </div>
           </form>
         </div>
@@ -219,6 +203,8 @@
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/request.js"></script>
 </body>
 
 </html>

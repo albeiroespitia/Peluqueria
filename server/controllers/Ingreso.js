@@ -1,6 +1,7 @@
 const Ingreso = require('../models/Ingreso');
 
 function saveProduct (req,res){
+	console.log(req.body);
     let ingreso = new Ingreso({
         empleado : req.body.empleado,
         servicio : req.body.servicio,
